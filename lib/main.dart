@@ -45,6 +45,8 @@ class _StoryPageState extends State<StoryPage> {
               Expanded(
                 flex: 2,
                 child: FlatButton(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10)),
                   onPressed: () {
                     //Choice 1 made by user.
                     setState(() {
@@ -72,6 +74,8 @@ class _StoryPageState extends State<StoryPage> {
                 child: Visibility(
                   visible: storybrain.buttonShouldBeVisible(),
                   child: FlatButton(
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)),
                     onPressed: () {
                       //Choice 2 made by user.
                       setState(() {
